@@ -2,7 +2,7 @@ var ex = 100;
 var ey = 100;
 var ed = 10;
 var speed = 10;
-var ts = "find it";
+var ts = "";
 var gravity = 0;
 // var squareState = 1;
 // var squareState1 = 1;
@@ -79,10 +79,10 @@ function draw(){
 
   ey = ey + speed;
 
-  if((ey > height) || (ey < 0)){
+  if((ey >= height) || (ey < 0)){
     speed = speed * -1;
   }
-  if((ex > width) || (ex < 0)){
+  if((ex >= width) || (ex < 0)){
     speed = speed * -1;
   }
 
